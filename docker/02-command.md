@@ -1,0 +1,2 @@
+- `docker run image_name` 运行一个容器
+- `docker ps` 查看正在运行的容器
