@@ -5,15 +5,15 @@
 ### 激活函数
 以 sigmoid 函数为例，它的作用是把 z 映射到[0,1]之间。这样不仅便于神经网络进行计算，也便于我们人类进行理解。
 
-$$\sigma(z)=\frac{1}{1+e^{-z}}$$
+$\sigma(z)=\frac{1}{1+e^{-z}}$
 
 ![image.png](./image/06.png)
 
 ### 损失函数
 在学习过程中，需要判断预测结果是否准确，以对自身进行调整，让预测结果越来越准确，这就要用到损失函数，损失函数是用来表现预测与实际数据之间的差距程度。实践中常用的损失函数为：
 
-$$L\left(\hat{y}^{(i)}, y^{(i)}\right)=-\left(y^{(i)} \log \left(\hat{y}^{(i)}\right)+\left(1-y^{(i)}\right) \log \left(1-\hat{y}^{(i)}\right)\right)$$
+$L\left(\hat{y}^{(i)}, y^{(i)}\right)=-\left(y^{(i)} \log \left(\hat{y}^{(i)}\right)+\left(1-y^{(i)}\right) \log \left(1-\hat{y}^{(i)}\right)\right)$
 
 上面是对单个样本定义损失函数，下面的公式用来用来衡量预测算法对整个训练集的预测精度，其实就是对每个样本的损失进行叠加，然后求平均值。我们称之为成本函数，它的计算结果越大，说明成本越大，预测结果越不准确。
 
-$$J(w, b)=\frac{1}{m} \sum_{i=1}^{m} L\left(\hat{y}^{(i)}, y^{(i)}\right)=-\frac{1}{m} \sum_{i=1}^{m}\left[\left(y^{(i)} \log \left(\hat{y}^{(i)}\right)+\left(1-y^{(i)}\right) \log \left(1-\hat{y}^{(i)}\right)\right]\right.$$
+$J(w, b)=\frac{1}{m} \sum_{i=1}^{m} L\left(\hat{y}^{(i)}, y^{(i)}\right)=-\frac{1}{m} \sum_{i=1}^{m}\left[\left(y^{(i)} \log \left(\hat{y}^{(i)}\right)+\left(1-y^{(i)}\right) \log \left(1-\hat{y}^{(i)}\right)\right]\right.$

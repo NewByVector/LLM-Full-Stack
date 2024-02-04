@@ -6,3 +6,6 @@
 
 ### image 和 container
 ![image.jpg](./image/03.png)
+
+### docker compose
+![image.jpg](./image/05.png)
