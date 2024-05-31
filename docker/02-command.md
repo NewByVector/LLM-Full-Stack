@@ -11,3 +11,6 @@
 - `docker commit container_id image_name` 保存容器为镜像
 - `docker compose up --build` 重新构建镜像并启动容器
 - `docker compose down` 停止容器
+- `docker pull <registry-name>/<image-name>:<tag>` 从镜像仓库拉取镜像
+- `docker save -o <save-path> <image-name>:<tag>` 保存镜像到本地
+- `docker load -i <save-path>` 从本地加载镜像

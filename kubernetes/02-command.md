@@ -1,0 +1,7 @@
+- `kubectl apply -f file` 将配置文件提供给 kubectl
+- `kubectl get pods` 查看正在运行的 Pod
+- `kubectl describe pod <pod-name>` 查看 Pod 的详细信息
+- `kubectl set image deployment/<deployment-name> <container-name>=<new-image>` 更新 Deployment 的镜像
+- `kubectl exec -it <pod-name> -- sh` 进入 Pod 的容器
+- `kubectl logs <pod-name>` 查看 Pod 的日志
+- `kubectl create secret generic <secret-name> --from-literal <key>=<value>` 创建一个 Secret
