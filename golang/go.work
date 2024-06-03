@@ -8,6 +8,10 @@ use (
 	./generics
 	./greetings
 	./hello
+	./interface
+	./map
+	./pointer
+	./routine
 	./struct
 	./vuln
 	./web-service-gin
