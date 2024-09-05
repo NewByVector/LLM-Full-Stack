@@ -26,8 +26,7 @@ $$w^{\prime}=w-r^{\star} d w$$
 
 **非向量化版本：**
 
-$
-\begin{aligned}
+$\begin{aligned}
 &\text { for } \mathrm{i}=1 \text { to } \mathrm{m} \text { : } \\
 &\text \quad { temp }=0 \\
 &\text \quad { for } \mathrm{j}=1 \text { to } \mathrm{n}: \\
@@ -42,20 +41,17 @@ $
 &\mathrm{J}=\mathrm{J} / \mathrm{m}, \mathrm{db}=\mathrm{db} / \mathrm{m}, \\
 &\text { for } \mathrm{j}=1 \mathrm{to} \mathrm{n}: \\
 &\mathrm \quad {dw}_{\mathrm{j}}=\mathrm{dw}_{\mathrm{j}} / \mathrm{m}
-\end{aligned}
-$
+\end{aligned}$
 
 **向量化的版本：**
 
-$
-\begin{aligned}
+$\begin{aligned}
 &Z=n p \cdot d o t(w \cdot t, X)+b \\
 &A=\sigma(Z)=1 /(1+n p \cdot \exp (-Z)) \\
 &J=n p \cdot \operatorname{sum}\left(-\left(Y^{*} n p \cdot \log (A)+(1-Y)^{*} n p \cdot \log (1-A)\right)\right) / m \\
 &d Z=A-Y \\
 &d w=n p \cdot d o t(X, d Z \cdot t) / m \\
 &d b=n p \cdot \operatorname{sum}(d Z) / m
-\end{aligned}
-$
+\end{aligned}$
 
 ### 代码实现
