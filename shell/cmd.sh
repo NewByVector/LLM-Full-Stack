@@ -28,7 +28,6 @@ more [file] # view large file
 less [file] # view large file
 head [file] # view first ten line of file
 tail [file] # view last ten line of file
-tac [file]  # reverse file
 
 echo something          # print something
 echo something >>[file] # input something into file
@@ -48,9 +47,6 @@ unzip [file.zip]               # unzip file
 
 alias k='cmd' # alias k replace cmd
 unalias k     # cancel alias
-
-hostname -I # get ip
-freee       # get memory
 
 sudo ufw status         # get firewall status
 sudo ufw enable/disable # enable/disable firewall
