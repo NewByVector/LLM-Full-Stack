@@ -4,8 +4,6 @@ $z=w_{1} x_{1}+w_{2} x_{2}+b \rightarrow a=\sigma(z) \rightarrow \mathcal{L}(a, 
 
 - 前向传播：通过上面公式计算出损失函数 L
 - 反向传播：计算出 dw1 dw2 db (L相对于 w1 w2 b 的偏导数)
-- 梯度下降：
-
-$\mathrm{w}_1^{\prime}=\mathrm{w}_1-\mathrm{r}^{\star}\mathrm{d}\mathrm{w}_1$
+- 梯度下降：`$\mathrm{w}_1^{\prime}=\mathrm{w}_1-\mathrm{r}^{\star}\mathrm{d}\mathrm{w}_1$`
 
 重复上述过程进行下一轮训练。
