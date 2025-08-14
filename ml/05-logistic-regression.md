@@ -45,14 +45,13 @@ $`\begin{aligned}
 
 **向量化的版本：**
 
-$$Z = \text{np.dot}(w.t, X) + b$$
-$$
-A = \sigma(Z) = 1 / (1 + \text{np.exp}(-Z))$$
-$$J = \text{np.sum}(- (Y * \text{np.log}(A) + (1 - Y) * \text{np.log}(1 - A))) / m$$
-$$
-dZ = A - Y$$
-$$dw = \text{np.dot}(X, dZ.t) / m$$
-$$
-db = \text{np.sum}(dZ) / m$$
+\begin{aligned}
+ & Z=np\cdot dot(w\cdot t,X)+b \\
+ & A=\sigma(Z)=1/(1+np\cdot\exp(-Z)) \\
+ & J=np\cdot\mathrm{sum}\left(-\left(Y^*np\cdot\log(A)+(1-Y)^*np\cdot\log(1-A)\right)\right)/m \\
+ & dZ=A-Y \\
+ & dw=np\cdot dot(X,dZ\cdot t)/m \\
+ & db=np\cdot\mathrm{sum}(dZ)/m
+\end{aligned}
 
 ### 代码实现
