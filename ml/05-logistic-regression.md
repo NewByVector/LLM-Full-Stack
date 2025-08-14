@@ -45,13 +45,14 @@ $`\begin{aligned}
 
 **向量化的版本：**
 
-$`\begin{aligned}
-&Z=n p \cdot d o t(w \cdot t, X)+b \\
-&A=\sigma(Z)=1 /(1+n p \cdot \exp (-Z)) \\
-&J=n p \cdot \operatorname{sum}\left(-\left(Y^{*} n p \cdot \log (A)+(1-Y)^{*} n p \cdot \log (1-A)\right)\right) / m \\
-&d Z=A-Y \\
-&d w=n p \cdot d o t(X, d Z \cdot t) / m \\
-&d b=n p \cdot \operatorname{sum}(d Z) / m
-\end{aligned}`$
+$$Z = \text{np.dot}(w.t, X) + b$$
+$$
+A = \sigma(Z) = 1 / (1 + \text{np.exp}(-Z))$$
+$$J = \text{np.sum}(- (Y * \text{np.log}(A) + (1 - Y) * \text{np.log}(1 - A))) / m$$
+$$
+dZ = A - Y$$
+$$dw = \text{np.dot}(X, dZ.t) / m$$
+$$
+db = \text{np.sum}(dZ) / m$$
 
 ### 代码实现
